@@ -51,6 +51,12 @@
   footer {
     background-color: #f2f2f2 !important;
   }
+
+  @media screen and (max-width: 992px) {
+    .company-slogan {
+      font-size: x-large;
+    }
+  }
 </style>
 
 <div class="container-fluid border-0 no-gutters" role="main">
@@ -96,13 +102,13 @@
     </div>
 
     <div class="row">
-      <div class="card col border-0">
+      <div class="card col-12 col-md-4 border-0">
         <img
           mat-card-image
           src="/assets/images/About/about1.jpg"
           alt="About1"
         />
-        <p class="card-title text-uppercase py-2">Efficient website building</p>
+        <p class="card-title text-uppercase pt-3">Efficient website building</p>
 
         <p class="service-text">
           Let us know when you need your website up and running. We'll build it
@@ -110,13 +116,13 @@
           features, such as great design and mobile-friendliness.
         </p>
       </div>
-      <div class="card col border-0">
+      <div class="card col-12 col-md-4 border-0">
         <img
           mat-card-image
           src="/assets/images/About/about2.jpg"
           alt="About2"
         />
-        <p class="card-title text-uppercase py-2">
+        <p class="card-title text-uppercase pt-3">
           Fast solving of computer problems
         </p>
 
@@ -126,13 +132,13 @@
           fix it quickly.
         </p>
       </div>
-      <div class="card col border-0">
+      <div class="card col-12 col-md-4 border-0">
         <img
           mat-card-image
           src="/assets/images/About/about3.jpg"
           alt="About3"
         />
-        <p class="card-title text-uppercase py-2">Incredible service</p>
+        <p class="card-title text-uppercase pt-3">Incredible service</p>
         <p class="service-text">
           All our IT professionals are helpful, kind, and respectful at all
           times.
@@ -143,18 +149,21 @@
     <!-- Footer -->
     <footer>
       <div class="row py-2">
-        <div class="col-3 d-flex justify-content-center">
+        <div class="col-4 d-flex justify-content-center">
           <img
             class="logo"
             src="/assets/images/Logo/png/ColorNoBg.png"
             alt="Color Logo"
           />
         </div>
-        <div class="col-8 d-flex justify-content-end">
+        <div class="col-7 d-flex justify-content-end">
           <p>
             Phone: 0411758128 <br />
             Email: info@fengtech.com.au
           </p>
+        </div>
+        <div class="col-1">
+          <p>&nbsp;</p>
         </div>
       </div>
     </footer>
