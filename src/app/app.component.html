@@ -1,64 +1,164 @@
 <style>
-  about-card {
+  .card {
+    background-color: #fbf8f5 !important;
+  }
+
+  .company-slogan {
+    font-size: 3.5rem;
+    font-family: Staatliches, Robot, "Arial Narrow", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+  }
+
+  .company-offering {
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    color: #cbb26a;
+  }
+
+  .company-offering-text {
+    font-size: 2rem;
+    font-family: Staatliches, "Arial Narrow", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    line-height: 1em;
+  }
+
+  .company-introduce {
+    font-size: 1.3rem;
+    font-family: Alata, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: justify;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    font-family: Staatliches, "Arial Narrow", Arial, sans-serif;
+  }
+
+  .service-text {
+    font-weight: 500;
+    font-family: Alata, Arial, sans-serif;
+  }
+
+  .logo {
+    height: 2rem;
+  }
+
+  footer {
+    background-color: #f2f2f2 !important;
   }
 </style>
 
-<!-- Toolbar -->
-<div class="toolbar" role="banner"></div>
-
-<div class="container" role="main">
-  <!-- Highlight Card -->
-  <div class="card highlight-card card-small">
-    <h1>The tech experts</h1>
-    <h2>
-      We are pleased to be a Campsie-based information technology company. Visit
-      us, and let us help you.
-    </h2>
+<div class="container-fluid border-0 no-gutters" role="main">
+  <!-- Toolbar -->
+  <div class="toolbar" role="nav">
+    <div class="row justify-content-center">
+      <div class="col justify-content-center d-flex pt-2">
+        <img
+          class="logo"
+          src="/assets/images/Logo/png/BlackNoBg.png"
+          alt="Black Logo"
+        />
+      </div>
+    </div>
   </div>
-  Contact us OUR OFFERING From us, you can expect the following:
-  <div class="row">
-    <mat-card class="col">
-      <mat-card-header>
-        <mat-card-title> Efficient website building</mat-card-title>
-      </mat-card-header>
-      <img mat-card-image src="/assets/images/About/about1.jpg" alt="About1" />
-      <mat-card-content>
-        <p>
+  <!-- Highlight Card -->
+  <div class="row justify-content-center">
+    <div class="card col-lg-6 col-sm-8 border-0 justify-content-center pt-2">
+      <p class="text-uppercase text-center company-slogan py-4">
+        The tech experts
+      </p>
+      <p class="company-introduce text-center">
+        We are pleased to be a Sydney-based information technology company.
+        Visit us, and let us help you.
+      </p>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="card col border-0">
+      <img mat-card-image src="/assets/images/About/about4.jpg" alt="About4" />
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="card col-lg-6 col-sm-8 border-0 justify-content-center">
+      <p class="text-uppercase company-offering text-center pt-4">
+        OUR OFFERING
+      </p>
+      <p class="text-uppercase company-offering-text text-center">
+        From us, you can expect the following
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="card col border-0">
+        <img
+          mat-card-image
+          src="/assets/images/About/about1.jpg"
+          alt="About1"
+        />
+        <p class="card-title text-uppercase py-2">Efficient website building</p>
+
+        <p class="service-text">
           Let us know when you need your website up and running. We'll build it
           for you within the shortest time possible, with the most remarkable
           features, such as great design and mobile-friendliness.
         </p>
-      </mat-card-content>
-    </mat-card>
-    <mat-card class="col">
-      <mat-card-header>
-        <mat-card-title> Fast solving of computer problems</mat-card-title>
-      </mat-card-header>
-      <img mat-card-image src="/assets/images/About/about2.jpg" alt="About2" />
-      <mat-card-content>
-        <p>
+      </div>
+      <div class="card col border-0">
+        <img
+          mat-card-image
+          src="/assets/images/About/about2.jpg"
+          alt="About2"
+        />
+        <p class="card-title text-uppercase py-2">
+          Fast solving of computer problems
+        </p>
+
+        <p class="service-text">
           If your computers are experiencing glitches and affecting the
           efficiency of your work, let us know. We'll identify the problem and
           fix it quickly.
         </p>
-      </mat-card-content>
-    </mat-card>
-    <mat-card class="about-card">
-      <mat-card-header>
-        <mat-card-title> Incredible service</mat-card-title>
-      </mat-card-header>
-      <img mat-card-image src="/assets/images/About/about3.jpg" alt="About3" />
-      <mat-card-content>
-        <p>
+      </div>
+      <div class="card col border-0">
+        <img
+          mat-card-image
+          src="/assets/images/About/about3.jpg"
+          alt="About3"
+        />
+        <p class="card-title text-uppercase py-2">Incredible service</p>
+        <p class="service-text">
           All our IT professionals are helpful, kind, and respectful at all
           times.
         </p>
-      </mat-card-content>
-    </mat-card>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row py-2">
+        <div class="col-3 d-flex justify-content-center">
+          <img
+            class="logo"
+            src="/assets/images/Logo/png/ColorNoBg.png"
+            alt="Color Logo"
+          />
+        </div>
+        <div class="col-8 d-flex justify-content-end">
+          <p>
+            Phone: 0411758128 <br />
+            Email: info@fengtech.com.au
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
 
-  <!-- Footer -->
-  <footer></footer>
+  <router-outlet></router-outlet>
 </div>
-
-<router-outlet></router-outlet>
