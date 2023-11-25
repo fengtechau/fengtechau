@@ -4,12 +4,14 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import * as changeCase from 'change-case';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { AppTitleService } from '../services/app-title.service';
 @Component({
   selector: 'app-tools',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, FontAwesomeModule],
   templateUrl: './tools.component.html',
   styleUrl: './tools.component.scss',
+  providers: [AppTitleService],
 })
 export class ToolsComponent implements OnInit {
   faChevronDown = faChevronDown;
@@ -37,7 +39,10 @@ export class ToolsComponent implements OnInit {
   };
   selectedCase = new FormControl(this.caseOptions[0]);
 
+  constructor(private appTitleService: AppTitleService) {}
+
   ngOnInit() {
+    this.appTitleService.setTitle('Text Convertor');
     const storedCase = localStorage.getItem('selectedCase');
     if (storedCase) {
       this.selectedCase.setValue(storedCase);

@@ -6,16 +6,14 @@ import { IpComponent } from './ip/ip.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent, data: { title: 'Feng Tech' } },
+  { path: 'home', component: HomeComponent },
   {
     path: 'texttools',
     component: ToolsComponent,
-    data: { title: 'Text Convertor' },
   },
   {
     path: 'ip',
     component: IpComponent,
-    data: { title: 'Curent IP Address' },
   },
 ];
 @NgModule({

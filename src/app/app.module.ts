@@ -9,6 +9,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
+import { AppTitleService } from './services/app-title.service';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -21,7 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     FontAwesomeModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [AppTitleService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

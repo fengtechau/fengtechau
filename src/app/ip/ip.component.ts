@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
+import { AppTitleService } from '../services/app-title.service';
 
 @Component({
   selector: 'app-ip',
@@ -8,13 +9,18 @@ import { HttpClient } from '@angular/common/http';
   imports: [CommonModule],
   templateUrl: './ip.component.html',
   styleUrl: './ip.component.scss',
+  providers: [AppTitleService],
 })
 export class IpComponent implements OnInit {
   ip: string = '';
   ipDetails: any;
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private appTitleService: AppTitleService
+  ) {}
 
   ngOnInit() {
+    this.appTitleService.setTitle('Get Current IP Address');
     this.http
       .get('https://api.ipify.org?format=json')
       .subscribe((data: any) => {
