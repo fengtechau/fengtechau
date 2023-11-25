@@ -1,6 +1,6 @@
 # Root
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.4.
 
 ## Development server
 
@@ -29,3 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Deploy
 
 To deploy to website as Github Pages use `ng deploy --base-href=/`.
+
+## Text tools
+
+Added the text tools to convert text to uppercase, lowercase, capitalize, kebab-case, snake-case, camel-case etc.
