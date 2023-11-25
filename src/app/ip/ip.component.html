@@ -1,0 +1,37 @@
+<div class="card">
+    <div class="card-header">Current IP Details</div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-4">
+                <h5 class="card-title">IP:</h5>
+            </div>
+            <div class="col-sm-8">
+                <p class="card-text">{{ ip }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h5 class="card-title">City:</h5>
+            </div>
+            <div class="col-sm-8">
+                <p class="card-text">{{ ipDetails?.city }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h5 class="card-title">Region:</h5>
+            </div>
+            <div class="col-sm-8">
+                <p class="card-text">{{ ipDetails?.region }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h5 class="card-title">Country:</h5>
+            </div>
+            <div class="col-sm-8">
+                <p class="card-text">{{ ipDetails?.country_name }}</p>
+            </div>
+        </div>
+    </div>
+</div>
